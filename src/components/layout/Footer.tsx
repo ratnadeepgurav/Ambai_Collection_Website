@@ -42,12 +42,12 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary via-maroon-light to-gold flex items-center justify-center">
-                <span className="font-display font-bold text-lg">स</span>
+                <span className="font-display font-bold text-lg">अं</span>
               </div>
-              <span className="font-display font-bold text-xl">साड़ी संसार</span>
+              <span className="font-display font-bold text-xl">अंबाई साडी</span>
             </div>
             <p className="text-primary-foreground/80 text-sm mb-4">
-              Bringing quality sarees to village homes at affordable prices. Your trusted saree shop since 2020.
+              Bringing quality sarees to village homes at affordable prices. Your trusted saree shop since 2018.
             </p>
             <p className="text-sm text-success font-medium">
               🚚 Local Village Delivery Available
@@ -82,27 +82,27 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-secondary" />
-                <a href="tel:+919876543210" className="hover:text-secondary">+91 98765 43210</a>
+                <a href="tel:+917588245983" className="hover:text-secondary">+91 7588245983</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-secondary" />
-                <a href="mailto:info@sareesansar.com" className="hover:text-secondary">info@sareesansar.com</a>
+                <a href="mailto:info@sareesansar.com" className="hover:text-secondary">suvarnagurav2329@gmail.com</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-secondary mt-0.5" />
-                <span>Main Market, Rampur Village, District XYZ, State - 123456</span>
+                <span>Main road, Shahuwadi, Kolhapur , Maharashtra - 416215</span>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-secondary" />
-                <span>Mon - Sat: 9AM - 8PM</span>
+                <span>Mon - Sun: 9AM - 8PM</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-          <p>© 2024 साड़ी संसार (Saree Sansar). All rights reserved.</p>
-          <p className="mt-2">Made with ❤️ for village customers</p>
+          <p>© 2026 अंबाई साडी (Ambai Saree). All rights reserved.</p>
+          <p className="mt-2">Made with ❤️ for customers</p>
         </div>
       </div>
     </footer>

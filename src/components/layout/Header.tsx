@@ -29,11 +29,11 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary via-maroon-light to-gold flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">स</span>
+              <span className="text-primary-foreground font-display font-bold text-lg">अं</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-bold text-lg text-primary leading-tight">साड़ी संसार</span>
-              <span className="text-[10px] text-muted-foreground -mt-0.5">Saree Sansar</span>
+              <span className="font-display font-bold text-lg text-primary leading-tight">अंबाई साडी</span>
+              <span className="text-[10px] text-muted-foreground -mt-0.5">Ambai saree</span>
             </div>
           </Link>
 
@@ -53,7 +53,7 @@ const Header = () => {
 
           {/* Right actions */}
           <div className="flex items-center gap-2 sm:gap-4">
-            <a href="tel:+919876543210" className="hidden sm:flex items-center gap-1 text-sm text-muted-foreground hover:text-primary">
+            <a href="tel:+917588245983" className="hidden sm:flex items-center gap-1 text-sm text-muted-foreground hover:text-primary">
               <Phone className="w-4 h-4" />
               <span>Call Us</span>
             </a>
@@ -96,11 +96,11 @@ const Header = () => {
                 </Link>
               ))}
               <a
-                href="tel:+919876543210"
+                href="tel:+917588245983"
                 className="py-2 px-4 text-foreground hover:bg-muted rounded-lg transition-colors flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                Call: +91 98765 43210
+                Call: +91 7588245983
               </a>
             </div>
           </nav>

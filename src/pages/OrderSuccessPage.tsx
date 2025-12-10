@@ -58,7 +58,7 @@ const OrderSuccessPage = () => {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">
-                Expected delivery: 3-5 business days
+                Expected delivery: 1 business days
               </p>
             </div>
 
@@ -70,7 +70,7 @@ const OrderSuccessPage = () => {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <a href="tel:+919876543210" className="flex-1">
+              <a href="tel:+917588245983" className="flex-1">
                 <Button variant="outline" size="lg" className="w-full">
                   <Phone className="w-4 h-4" />
                   Call for Updates
@@ -81,7 +81,7 @@ const OrderSuccessPage = () => {
             {/* WhatsApp support */}
             <div className="mt-8 p-4 bg-[#25D366]/10 rounded-xl">
               <p className="text-sm text-foreground">
-                📱 Get order updates on WhatsApp! Save our number: <strong>+91 98765 43210</strong>
+                📱 Get order updates on WhatsApp! Save our number: <strong>+91 7588245983</strong>
               </p>
             </div>
           </div>
