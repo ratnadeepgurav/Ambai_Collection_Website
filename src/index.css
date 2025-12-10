@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Traditional Indian Color Palette */
+    --background: 35 30% 97%;
+    --foreground: 0 30% 15%;
+
+    --card: 35 25% 95%;
+    --card-foreground: 0 30% 15%;
+
+    --popover: 35 30% 97%;
+    --popover-foreground: 0 30% 15%;
+
+    /* Maroon - Primary */
+    --primary: 350 70% 35%;
+    --primary-foreground: 35 30% 97%;
+
+    /* Gold - Secondary */
+    --secondary: 42 85% 55%;
+    --secondary-foreground: 0 30% 15%;
+
+    /* Soft Pink - Muted */
+    --muted: 350 25% 92%;
+    --muted-foreground: 350 20% 40%;
+
+    /* Gold Accent */
+    --accent: 42 85% 55%;
+    --accent-foreground: 0 30% 15%;
+
+    /* Success Green */
+    --success: 145 60% 40%;
+    --success-foreground: 35 30% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 350 70% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --maroon: 350 70% 35%;
+    --maroon-light: 350 60% 45%;
+    --maroon-dark: 350 75% 25%;
+    
+    --gold: 42 85% 55%;
+    --gold-light: 42 80% 70%;
+    --gold-dark: 42 90% 40%;
+    
+    --cream: 35 30% 97%;
+    --cream-dark: 35 25% 90%;
+    
+    --sage: 145 30% 50%;
+    --sage-light: 145 25% 85%;
+    
+    --pink-pastel: 350 40% 90%;
+    --pink-deep: 340 50% 70%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(350 70% 35%) 0%, hsl(350 60% 45%) 50%, hsl(42 85% 55%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 90% 40%) 0%, hsl(42 85% 55%) 50%, hsl(42 80% 70%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(35 30% 97%) 0%, hsl(35 25% 95%) 100%);
+    --gradient-festive: linear-gradient(135deg, hsl(350 70% 35%) 0%, hsl(340 50% 70%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(0 30% 15% / 0.08);
+    --shadow-md: 0 4px 16px hsl(0 30% 15% / 0.12);
+    --shadow-lg: 0 8px 32px hsl(0 30% 15% / 0.16);
+    --shadow-gold: 0 4px 20px hsl(42 85% 55% / 0.3);
+    --shadow-maroon: 0 4px 20px hsl(350 70% 35% / 0.25);
+
+    /* Animations */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 30% 8%;
+    --foreground: 35 30% 95%;
+
+    --card: 0 25% 12%;
+    --card-foreground: 35 30% 95%;
+
+    --popover: 0 30% 8%;
+    --popover-foreground: 35 30% 95%;
+
+    --primary: 350 65% 50%;
+    --primary-foreground: 35 30% 97%;
+
+    --secondary: 42 80% 50%;
+    --secondary-foreground: 0 30% 10%;
+
+    --muted: 0 20% 18%;
+    --muted-foreground: 35 20% 65%;
+
+    --accent: 42 80% 50%;
+    --accent-foreground: 0 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 20% 20%;
+    --input: 0 20% 20%;
+    --ring: 350 65% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .text-gradient-maroon {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-festive);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-gold {
+    background-image: var(--gradient-gold);
+  }
+
+  .bg-gradient-festive {
+    background-image: var(--gradient-festive);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-maroon {
+    box-shadow: var(--shadow-maroon);
+  }
+
+  .trust-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium;
+    @apply bg-success/10 text-success border border-success/20;
+  }
+
+  .price-tag {
+    @apply font-semibold text-primary;
+  }
+
+  .price-original {
+    @apply text-muted-foreground line-through text-sm;
+  }
+
+  .discount-badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-bold;
+    @apply bg-secondary text-secondary-foreground;
+  }
+
+  .cod-badge {
+    @apply inline-flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium;
+    @apply bg-success/15 text-success border border-success/25;
+  }
+
+  .whatsapp-button {
+    @apply fixed bottom-6 right-6 z-50 flex items-center justify-center;
+    @apply w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg;
+    @apply hover:scale-110 transition-transform duration-300;
+  }
+
+  .filter-chip {
+    @apply px-4 py-2 rounded-full text-sm font-medium cursor-pointer transition-all;
+    @apply bg-card border border-border hover:border-primary hover:bg-primary/5;
+  }
+
+  .filter-chip-active {
+    @apply bg-primary text-primary-foreground border-primary;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+    background-size: 200% 100%;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
