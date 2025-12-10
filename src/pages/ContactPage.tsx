@@ -31,7 +31,7 @@ const ContactPage = () => {
 
               <div className="space-y-6">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+917588245983"
                   className="flex items-start gap-4 p-4 bg-card rounded-xl shadow-card hover:shadow-lg transition-shadow"
                 >
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -39,13 +39,13 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Call Us</h3>
-                    <p className="text-primary text-lg font-medium">+91 98765 43210</p>
-                    <p className="text-sm text-muted-foreground">Mon - Sat, 9AM - 8PM</p>
+                    <p className="text-primary text-lg font-medium">+91 7588245983</p>
+                    <p className="text-sm text-muted-foreground">Mon - Sun, 9AM - 8PM</p>
                   </div>
                 </a>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/917588245983"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 bg-card rounded-xl shadow-card hover:shadow-lg transition-shadow"
@@ -61,7 +61,7 @@ const ContactPage = () => {
                 </a>
 
                 <a
-                  href="mailto:info@sareesansar.com"
+                  href="mailto:suvarnagurav2329@gmail.com"
                   className="flex items-start gap-4 p-4 bg-card rounded-xl shadow-card hover:shadow-lg transition-shadow"
                 >
                   <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
@@ -69,7 +69,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
-                    <p className="text-secondary text-lg font-medium">info@sareesansar.com</p>
+                    <p className="text-secondary text-lg font-medium">suvarnagurav2329@gmail.com</p>
                     <p className="text-sm text-muted-foreground">We reply within 24 hours</p>
                   </div>
                 </a>
@@ -80,8 +80,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Visit Our Shop</h3>
-                    <p className="text-foreground">Main Market, Rampur Village</p>
-                    <p className="text-muted-foreground">District XYZ, State - 123456</p>
+                    <p className="text-foreground">Main road, Shahuwadi</p>
+                    <p className="text-muted-foreground">Kolhaour , Maharashtra - 416215</p>
                   </div>
                 </div>
 
@@ -91,9 +91,9 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Working Hours</h3>
-                    <p className="text-foreground">Monday - Saturday</p>
+                    <p className="text-foreground">Monday - Sunday</p>
                     <p className="text-muted-foreground">9:00 AM - 8:00 PM</p>
-                    <p className="text-sm text-primary mt-1">Sunday: Closed</p>
+      
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const ContactPage = () => {
                   <div>
                     <h4 className="font-medium text-foreground mb-1">How to return a saree?</h4>
                     <p className="text-sm text-muted-foreground">
-                      Easy 7-day returns! Just call us and we'll arrange pickup.
+                      Easy 1 -day returns! Just call us and we'll arrange pickup.
                     </p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const ContactPage = () => {
                 <p className="text-muted-foreground mb-4">
                   Our experts can help you find the perfect saree!
                 </p>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/917588245983" target="_blank" rel="noopener noreferrer">
                   <Button variant="whatsapp" size="lg">
                     <MessageCircle className="w-5 h-5" />
                     Chat on WhatsApp
